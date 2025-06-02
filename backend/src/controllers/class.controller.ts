@@ -113,4 +113,52 @@ export const classController = {
       res.status(500).json({ error: "Error fetching class by supervisor" });
     }
   },
+
+  // Route controller aliases and missing methods for class.routes.ts
+  getAllClasses: async (req: Request, res: Response) => {
+    return classController.getAll(req, res);
+  },
+  getClassById: async (req: Request, res: Response) => {
+    return classController.getById(req, res);
+  },
+  createClass: async (req: Request, res: Response) => {
+    return classController.create(req, res);
+  },
+  updateClass: async (req: Request, res: Response) => {
+    return classController.update(req, res);
+  },
+  deleteClass: async (req: Request, res: Response) => {
+    return classController.delete(req, res);
+  },
+  getClassStudents: async (req: Request, res: Response) => {
+    const { id } = req.params;
+    try {
+      const students = await prisma.student.findMany({
+        where: { classId: parseInt(id), isActive: true },
+      });
+      res.status(200).json(students);
+    } catch (error) {
+      res.status(500).json({ error: "Error fetching students for class" });
+    }
+  },
+  assignTeacherToClass: async (req: Request, res: Response) => {
+    const { id } = req.params;
+    const { supervisorId } = req.body;
+    try {
+      const updatedClass = await prisma.class.update({
+        where: { id: parseInt(id) },
+        data: {
+          supervisorId: supervisorId ? parseInt(supervisorId) : undefined,
+        },
+        include: {
+          supervisor: {
+            select: { id: true, email: true, name: true },
+          },
+        },
+      });
+      res.status(200).json(updatedClass);
+    } catch (error) {
+      res.status(400).json({ error: "Error assigning teacher to class" });
+    }
+  },
 };

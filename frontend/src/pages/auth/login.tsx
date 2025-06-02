@@ -31,7 +31,7 @@ export default function Login() {
 
   useEffect(() => {
     if (isSuccess && user) {
-      const { role } = user.user;
+      const { role } = user;
       if (role === "SUPER_ADMIN") {
         navigate("/admin");
       } else if (role === "TEACHER" || role === "Teacher") {

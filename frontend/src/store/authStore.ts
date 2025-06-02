@@ -1,30 +1,107 @@
 import { create } from "zustand";
+import { persist } from "zustand/middleware";
 
-export const useAuthStore = create<AuthStore>((set) => ({
-  user: JSON.parse(localStorage.getItem("user") || "null"),
-  assigned_class:
-    (JSON.parse(localStorage.getItem("assigned_class") || "null") as Class) ||
-    null,
-  token: localStorage.getItem("token") || null,
-  isAuthenticated: !!localStorage.getItem("token"),
-  isLoading: false,
-  login: ({ user, token, assigned_class }) => {
-    localStorage.setItem("user", JSON.stringify(user));
-    localStorage.setItem("assigned_class", JSON.stringify(assigned_class));
-    localStorage.setItem("token", token);
-    set({ user, token, isAuthenticated: !!token, assigned_class });
-  },
-  logout: () => {
-    localStorage.removeItem("user");
-    localStorage.removeItem("token");
-    localStorage.removeItem("assigned_class");
-    set({
+interface User {
+  id: number;
+  email: string;
+  name: string;
+  role: string;
+  phone?: string;
+  gender?: string;
+  classes?: Array<{ id: number; name: string }>;
+}
+
+interface AuthState {
+  user: User | null;
+  token: string | null;
+  isLoading: boolean;
+  isAuthenticated: boolean;
+}
+
+interface AuthActions {
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+  setLoading: (loading: boolean) => void;
+  initializeAuth: () => void;
+}
+
+type AuthStore = AuthState & AuthActions;
+
+export const useAuthStore = create<AuthStore>()(
+  persist(
+    (set, get) => ({
+      // State
       user: null,
       token: null,
+      isLoading: false,
       isAuthenticated: false,
-      assigned_class: null,
-    });
-  },
-  setLoading: () => set({ isLoading: true }),
-  setLoaded: () => set({ isLoading: false }),
-}));
+
+      // Actions
+      login: async (email: string, password: string) => {
+        set({ isLoading: true });
+
+        try {
+          const response = await fetch(
+            `${import.meta.env.VITE_API_URL}/api/auth/login`,
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({ email, password }),
+            }
+          );
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.error?.message || "Login failed");
+          }
+
+          const { user, token } = data.data;
+
+          set({
+            user,
+            token,
+            isAuthenticated: true,
+            isLoading: false,
+          });
+        } catch (error) {
+          set({ isLoading: false });
+          throw error;
+        }
+      },
+
+      logout: () => {
+        set({
+          user: null,
+          token: null,
+          isAuthenticated: false,
+          isLoading: false,
+        });
+      },
+
+      setLoading: (loading: boolean) => {
+        set({ isLoading: loading });
+      },
+
+      initializeAuth: () => {
+        const state = get();
+        if (state.token && state.user) {
+          set({ isAuthenticated: true });
+        }
+      },
+    }),
+    {
+      name: "auth-storage",
+      partialize: (state) => ({
+        user: state.user,
+        token: state.token,
+        isAuthenticated: state.isAuthenticated,
+      }),
+    }
+  )
+);
+
+// Initialize auth on app start
+useAuthStore.getState().initializeAuth();

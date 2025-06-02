@@ -36,9 +36,9 @@ export const prepaymentController = {
       for (let date = start; date <= end; date.setDate(date.getDate() + 1)) {
         await prisma.record.upsert({
           where: {
-            payedBy_submitedAt: {
+            payedBy_date: {
               payedBy: parseInt(studentId),
-              submitedAt: new Date(date),
+              date: new Date(date),
             },
           },
           update: {
@@ -48,7 +48,7 @@ export const prepaymentController = {
           },
           create: {
             amount: dailyAmount,
-            submitedAt: new Date(date),
+            date: new Date(date),
             submitedBy: parseInt(userId), // Assuming req.user is set by authentication middleware
             payedBy: parseInt(studentId),
             isPrepaid: true,
@@ -167,7 +167,7 @@ export const prepaymentController = {
         where: {
           payedBy: updatedPrepayment.studentId,
           isPrepaid: true,
-          submitedAt: {
+          date: {
             gte: start,
             lte: end,
           },
@@ -197,5 +197,68 @@ export const prepaymentController = {
       console.error("Error deleting prepayment:", error);
       res.status(500).json({ error: "Internal Server Error" });
     }
+  },
+
+  getPrepaymentById: async (req: Request, res: Response) => {
+    const { id } = req.params;
+    try {
+      const prepayment = await prisma.prepayment.findUnique({
+        where: { id: parseInt(id) },
+        include: { student: true, class: true },
+      });
+      if (!prepayment) {
+        return res.status(404).json({ error: "Prepayment not found" });
+      }
+      res.status(200).json(prepayment);
+    } catch (error) {
+      console.error("Error fetching prepayment by id:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  },
+
+  getPrepaymentsByStudent: async (req: Request, res: Response) => {
+    const { studentId } = req.params;
+    try {
+      const prepayments = await prisma.prepayment.findMany({
+        where: { studentId: parseInt(studentId) },
+        include: { student: true, class: true },
+      });
+      res.status(200).json(prepayments);
+    } catch (error) {
+      console.error("Error fetching prepayments by student:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  },
+
+  getActivePrepayments: async (req: Request, res: Response) => {
+    try {
+      const today = new Date();
+      const prepayments = await prisma.prepayment.findMany({
+        where: {
+          startDate: { lte: today },
+          endDate: { gte: today },
+          isActive: true,
+        },
+        include: { student: true, class: true },
+      });
+      res.status(200).json(prepayments);
+    } catch (error) {
+      console.error("Error fetching active prepayments:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  },
+
+  usePrepayment: async (req: Request, res: Response) => {
+    // Placeholder for actual logic
+    res
+      .status(200)
+      .json({ message: "Prepayment usage processed (implement logic)" });
+  },
+
+  getPrepaymentUsageHistory: async (req: Request, res: Response) => {
+    // Placeholder for actual logic
+    res
+      .status(200)
+      .json({ message: "Prepayment usage history (implement logic)" });
   },
 };

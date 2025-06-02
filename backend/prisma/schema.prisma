@@ -3,101 +3,190 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique
-  password String?
-  name     String?
-  phone    String?
-  role     String
-  gender  String?
-  // assigned_class    Class?   @relation 
-  classes Class[] 
-  submittedRecords   Record[]
-}
-
-model Settings {
-  id      Int @id @default(autoincrement())
-  name    String
-  value   String
+  id               Int      @id @default(autoincrement())
+  email            String   @unique
+  password         String?
+  name             String?
+  phone            String?
+  role             Role     @default(TEACHER)
+  gender           Gender?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  
+  // Relations
+  classes          Class[]  @relation("ClassSupervisor")
+  submittedRecords Record[] @relation("RecordSubmitter")
+  expenses         Expense[] @relation("ExpenseSubmitter")
+  
+  @@map("users")
 }
 
 model Class {
   id           Int       @id @default(autoincrement())
-  name         String    @unique // Ensure class names are unique
+  name         String    @unique
   description  String?
-  supervisorId Int?     
-  records Record[]
+  supervisorId Int?
+  isActive     Boolean   @default(true)
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+  
+  // Relations
+  supervisor   User?     @relation("ClassSupervisor", fields: [supervisorId], references: [id])
   students     Student[]
-  supervisor   User?     @relation(fields: [supervisorId], references: [id])
-    prepayments  Prepayment[]
+  records      Record[]
+  prepayments  Prepayment[]
+  
+  @@map("classes")
 }
 
 model Student {
   id          Int      @id @default(autoincrement())
   name        String
-  age         Int
+  age         Int?
   parentPhone String?
-  gender     String?
+  gender      Gender?
   classId     Int?
-  class       Class?  @relation(fields: [classId], references: [id])
-  records      Record[]
-    prepayments  Prepayment[]
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  class       Class?   @relation(fields: [classId], references: [id])
+  records     Record[]
+  prepayments Prepayment[]
+  owings      Owing[]
+  
+  @@map("students")
 }
 
 model Record {
-  id             Int      @id @default(autoincrement())
-  amount         Int
-  submitedAt     DateTime @default(now())
+  id             Int           @id @default(autoincrement())
+  amount         Decimal       @default(0)
+  date           DateTime      @default(now())
   submitedBy     Int
   payedBy        Int?
-  isPrepaid      Boolean  @default(false)
-  hasPaid        Boolean  @default(false)
-  isAbsent       Boolean  @default(false)
-  settingsAmount Int
-  teacher        User     @relation(fields: [submitedBy], references: [id], onDelete: Cascade)
-  student        Student? @relation(fields: [payedBy], references: [id])
-  classId        Int?     
-  class          Class?   @relation(fields: [classId], references: [id])
-
-  @@unique([payedBy, submitedAt])
+  classId        Int?
+  isPrepaid      Boolean       @default(false)
+  hasPaid        Boolean       @default(false)
+  isAbsent       Boolean       @default(false)
+  paymentType    PaymentType   @default(DAILY)
+  settingsAmount Decimal       @default(0)
+  notes          String?
+  createdAt      DateTime      @default(now())
+  updatedAt      DateTime      @updatedAt
+  
+  // Relations
+  submitter      User          @relation("RecordSubmitter", fields: [submitedBy], references: [id], onDelete: Cascade)
+  student        Student?      @relation(fields: [payedBy], references: [id])
+  class          Class?        @relation(fields: [classId], references: [id])
+  
+  @@unique([payedBy, date])
   @@index([submitedBy])
   @@index([payedBy])
   @@index([classId])
+  @@index([date])
+  @@map("records")
+}
+
+model Prepayment {
+  id           Int      @id @default(autoincrement())
+  amount       Decimal
+  startDate    DateTime
+  endDate      DateTime
+  numberOfDays Int
+  studentId    Int
+  classId      Int
+  paymentType  PaymentType @default(DAILY)
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  
+  // Relations
+  student      Student  @relation(fields: [studentId], references: [id])
+  class        Class    @relation(fields: [classId], references: [id])
+  
+  @@map("prepayments")
+}
+
+model Owing {
+  id          Int      @id @default(autoincrement())
+  studentId   Int
+  amount      Decimal
+  dueDate     DateTime
+  daysPastDue Int      @default(0)
+  isResolved  Boolean  @default(false)
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  student     Student  @relation(fields: [studentId], references: [id])
+  
+  @@map("owings")
+}
+
+model Settings {
+  id        Int      @id @default(autoincrement())
+  key       String   @unique
+  value     String
+  category  String   @default("general")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@map("settings")
 }
 
 model Expense {
   id          Int      @id @default(autoincrement())
   referenceId Int
-  amount      Float
+  amount      Decimal
   date        DateTime @default(now())
   description String?
-  reference   Reference @relation(fields: [referenceId], references: [id])
   submitedBy  Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  
+  // Relations
+  reference   Reference @relation(fields: [referenceId], references: [id])
+  submitter   User      @relation("ExpenseSubmitter", fields: [submitedBy], references: [id])
+  
+  @@map("expenses")
 }
 
 model Reference {
-  id          Int      @id @unique @default(autoincrement())
-  name        String
+  id          Int       @id @default(autoincrement())
+  name        String    @unique
   description String?
+  isActive    Boolean   @default(true)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  
+  // Relations
   expenses    Expense[]
+  
+  @@map("references")
 }
 
-model Prepayment {
-  id           Int      @id @default(autoincrement())
-  amount       Float
-  startDate    DateTime @default(now())
-  endDate      DateTime @default(now())
-  numberOfDays Int
-  studentId    Int
-  classId      Int
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
-  student      Student  @relation(fields: [studentId], references: [id])
-  class        Class    @relation(fields: [classId], references: [id])
+// Enums
+enum Role {
+  ADMIN
+  TEACHER
+  SUPER_ADMIN
 }
 
+enum Gender {
+  MALE
+  FEMALE
+}
+
+enum PaymentType {
+  DAILY
+  WEEKLY
+  MONTHLY
+  TERMLY
+}
