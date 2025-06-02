@@ -2,29 +2,30 @@ import { AnalyticsCard } from "@/components/shared/cards/analytic-cards";
 import { CardsSkeleton } from "@/components/shared/page-loader/loaders";
 import {
   useFetchRecordsAmount,
-  useTeacherAnalytics,
-} from "@/services/api/queries";
+  useTeacherDashboardAnalytics,
+} from "@/services/api";
+
 import { useAuthStore } from "@/store/authStore";
 import { CurrencyIcon, UserCheck, Users, UserX } from "lucide-react";
 
 export default function TeacherHome() {
-  const { user, assigned_class } = useAuthStore();
+  const { user } = useAuthStore();
   const { data: price, error: canteenPriceError } = useFetchRecordsAmount();
   const {
     data: analytics,
     isLoading,
     error,
-  } = useTeacherAnalytics(assigned_class?.id ?? 0);
+  } = useTeacherDashboardAnalytics(user?.classes?.[0]?.id ?? 0);
 
   return (
     <>
       {/* Welcome message */}
       <div className="flex items-center md:flex-row flex-col justify-between w-full">
         <div className="space-y-2 p-4">
-          <h1 className="text-2xl font-bold">Welcome, {user?.user?.name}</h1>
+          <h1 className="text-2xl font-bold">Welcome, {user?.name}</h1>
           <p className="">
             You are in charge of{" "}
-            <span className="font-bold">{assigned_class?.name}</span> class.
+            <span className="font-bold">{user?.classes?.[0]?.name}</span> class.
           </p>
         </div>
         <div className="">
@@ -34,7 +35,7 @@ export default function TeacherHome() {
               <p className="text-red-500">Error fetching canteen price</p>
             )}
             <span className="text-2xl font-bold text-primary text-center px-2">
-              Gh₵{price?.data?.value || 0}
+              Gh₵{price?.amount || 0}
             </span>
           </h2>
           <p>This is the current price of the canteen.</p>

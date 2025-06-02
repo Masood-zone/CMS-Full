@@ -12,7 +12,6 @@ interface User {
     name: string;
     phone: string;
     role: string;
-    avatar?: string;
     gender: string;
     assigned_class?: {
       id: number;
@@ -107,9 +106,11 @@ type CanteenRecord = {
   classId: number;
   settingsAmount: number;
   isAbsent: boolean;
+  date: string;
   student: {
     id: number;
-    name: string;
+    firstName: string;
+    lastName: string;
   } | null;
 };
 

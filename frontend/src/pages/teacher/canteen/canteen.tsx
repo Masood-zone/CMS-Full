@@ -14,11 +14,11 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/authStore";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  useStudentRecordsByClassAndDate,
-  useUpdateStudentStatus,
-  useGenerateStudentRecords,
-} from "@/services/api/queries";
+// import {
+//   useStudentRecordsByClassAndDate,
+//   useUpdateStudentStatus,
+//   useGenerateStudentRecords,
+// } from "@/services/api/queries";
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -30,13 +30,18 @@ import { CalendarIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { CanteenTable } from "@/components/tables/canteen-table";
 import { ColumnDef } from "@tanstack/react-table";
+import {
+  useGenerateStudentRecords,
+  useStudentRecordsByClassAndDate,
+  useUpdateStudentStatus,
+} from "@/services/api";
 
 export default function Canteen() {
   const navigate = useNavigate();
-  const { user, assigned_class } = useAuthStore();
-  const teacher = user?.user;
+  const { user } = useAuthStore();
+  const teacher = user;
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
-  const classId = assigned_class?.id ?? 0;
+  const classId = user?.classes?.[0]?.id ?? 0;
   const formattedDate = selectedDate.toISOString().split("T")[0];
   const { data: studentRecords } = useStudentRecordsByClassAndDate(
     classId,
@@ -63,13 +68,17 @@ export default function Canteen() {
   };
 
   const handleGenerateRecords = () => {
-    generateRecords({ classId, date: selectedDate.toISOString() });
+    generateRecords({ classId, date: selectedDate.toISOString(), adminId: 0 });
   };
 
   const columns: ColumnDef<CanteenRecord>[] = [
     {
-      accessorKey: "student.name",
       header: "Student Name",
+      accessorKey: "student",
+      cell: ({ row }) => {
+        const student = row.original.student;
+        return student ? `${student.firstName} ${student.lastName}` : "-";
+      },
     },
     {
       accessorKey: "settingsAmount",
@@ -77,9 +86,9 @@ export default function Canteen() {
       cell: ({ row }) => `₵${row.original.settingsAmount.toFixed(2)}`,
     },
     {
-      accessorKey: "submitedAt",
+      accessorKey: "date",
       header: "Date",
-      cell: ({ row }) => format(new Date(row.original.submitedAt), "PPp"),
+      cell: ({ row }) => format(new Date(row.original.date), "PPp"),
     },
     {
       accessorKey: "hasPaid",
@@ -140,8 +149,10 @@ export default function Canteen() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-2xl font-bold">Hello, {teacher?.name}</h1>
-          <p className="text-xl py-2">{assigned_class?.name}</p>
-          <p className="text-base">Record canteen for {assigned_class?.name}</p>
+          <p className="text-xl py-2">{user?.classes?.[0]?.name}</p>
+          <p className="text-base">
+            Record canteen for {user?.classes?.[0]?.name}
+          </p>
         </div>
         <div className="space-x-2">
           <Button variant="ghost">

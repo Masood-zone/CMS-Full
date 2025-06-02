@@ -212,3 +212,39 @@
 {"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:28:56"}
 {"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:28:56"}
 {"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:28:56"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:38:50"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:39:10"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:41:01"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:41:08"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:42:23"}
+{"level":"info","message":"Starting a postgresql pool with 9 connections.","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-02 17:43:02"}

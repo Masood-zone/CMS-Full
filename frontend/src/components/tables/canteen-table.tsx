@@ -114,7 +114,7 @@ export function CanteenTable<TData, TValue>({
       </div>
       <div className="rounded-md border overflow-hidden">
         <Table>
-          <TableHeader className="bg-green-600">
+          <TableHeader className="bg-primary text-white">
             {table.getHeaderGroups().map((headerGroup) => (
               <TableRow key={headerGroup.id}>
                 {headerGroup.headers.map((header) => {

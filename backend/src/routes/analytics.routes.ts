@@ -25,7 +25,10 @@ router.get("/classes", asyncHandler(analyticsController.getClassAnalytics));
 
 // Teacher analytics
 router.get("/teachers", asyncHandler(analyticsController.getTeacherAnalytics));
-
+router.get(
+  "/teacher/:id",
+  asyncHandler(analyticsController.getTeacherByIdAnalytics)
+);
 // Owing analytics
 router.get("/owings", asyncHandler(analyticsController.getOwingAnalytics));
 

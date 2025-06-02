@@ -228,6 +228,62 @@ export const analyticsController = {
       res.status(500).json({ error: "Internal Server Error" });
     }
   },
+  getTeacherByIdAnalytics: async (req: Request, res: Response) => {
+    const { id } = req.params;
+    try {
+      const teacher = await prisma.user.findUnique({
+        where: { id: Number.parseInt(id) },
+        include: {
+          classes: {
+            include: {
+              students: true,
+              records: {
+                where: {
+                  date: {
+                    gte: new Date(new Date().setHours(0, 0, 0, 0)),
+                    lt: new Date(new Date().setHours(23, 59, 59, 999)),
+                  },
+                },
+                include: { student: true },
+              },
+            },
+          },
+        },
+      });
+
+      if (!teacher) {
+        return res.status(404).json({ error: "Teacher not found" });
+      }
+
+      // Flatten all students from all classes
+      const students = teacher.classes.flatMap((cls) => cls.students);
+      // Flatten all today's records from all classes
+      const todaysRecords = teacher.classes.flatMap((cls) => cls.records);
+      // Total amount for today
+      const totalAmount = todaysRecords.reduce(
+        (sum, rec) => sum + Number(rec.amount),
+        0
+      );
+      // Paid and unpaid students for today (counts only)
+      const paidCount = todaysRecords.filter((rec) => rec.hasPaid).length;
+      const unpaidCount = todaysRecords.filter((rec) => !rec.hasPaid).length;
+
+      res.status(200).json({
+        teacher: {
+          id: teacher.id,
+          name: teacher.name,
+          email: teacher.email,
+        },
+        totalStudents: students.length,
+        totalAmount,
+        paidCount,
+        unpaidCount,
+      });
+    } catch (error) {
+      console.error("Error fetching teacher by ID analytics:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  },
 
   getOwingsReport: async (req: Request, res: Response) => {
     try {
