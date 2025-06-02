@@ -44,7 +44,6 @@ export default function StudentsTable({
       enableHiding: false,
     },
     {
-      accessorKey: "name",
       header: ({ column }) => {
         return (
           <Button
@@ -55,6 +54,15 @@ export default function StudentsTable({
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         );
+      },
+      accessorFn: (row) => `${row.firstName} ${row.lastName}`,
+      id: "fullName",
+      sortingFn: (a, b) => {
+        const aName =
+          `${a.original.firstName} ${a.original.lastName}`.toLowerCase();
+        const bName =
+          `${b.original.firstName} ${b.original.lastName}`.toLowerCase();
+        return aName.localeCompare(bName);
       },
     },
     {
