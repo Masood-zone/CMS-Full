@@ -33,8 +33,19 @@ interface FormUser {
 
 type Student = {
   id: string | number;
-  name: string;
-  age: number;
+  name?: string;
+  age?: number;
+  firstName: string;
+  lastName: string;
+  email?: string;
+  phone?: string;
+  parentPhone?: string;
+  parentEmail?: string;
+  address?: string;
+  dateOfBirth?: string;
+  isActive?: boolean;
+  parentName?: string;
+  classId?: string | number;
   classId: string | number;
   gender: "male" | "female";
   hasPaid?: boolean;

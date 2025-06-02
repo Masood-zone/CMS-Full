@@ -28,7 +28,7 @@ export function TeacherSidebar({
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
   const { user } = useAuthStore();
-  const mainUser = user?.user;
+  const mainUser = user;
   const { state, isMobile } = useSidebar();
 
   return (
@@ -82,7 +82,15 @@ export function TeacherSidebar({
       </SidebarContent>
       <SidebarFooter>
         {mainUser && (
-          <NavUser user={{ ...mainUser, token: user.token, user: user.user }} />
+          <NavUser
+            user={{
+              user: {
+                name: mainUser.name || "",
+                email: mainUser.email || "",
+                role: mainUser.role || "",
+              },
+            }}
+          />
         )}
       </SidebarFooter>
       <SidebarRail />
