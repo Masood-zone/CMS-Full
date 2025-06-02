@@ -45,22 +45,33 @@ model Class {
 }
 
 model Student {
-  id          Int      @id @default(autoincrement())
-  name        String
-  age         Int?
-  parentPhone String?
-  gender      Gender?
-  classId     Int?
-  isActive    Boolean  @default(true)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
-  
+  id           Int      @id @default(autoincrement())
+  // Deprecated fields (kept for backward compatibility)
+  name         String?
+  age          Int?
+
+  // New fields matching validation schema
+  firstName    String
+  lastName     String
+  email        String?  @unique
+  phone        String?
+  classId      Int?
+  parentName   String
+  parentPhone  String
+  parentEmail  String?
+  address      String?
+  dateOfBirth  DateTime?
+  gender       Gender?
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
   // Relations
-  class       Class?   @relation(fields: [classId], references: [id])
-  records     Record[]
-  prepayments Prepayment[]
-  owings      Owing[]
-  
+  class        Class?   @relation(fields: [classId], references: [id])
+  records      Record[]
+  prepayments  Prepayment[]
+  owings       Owing[]
+
   @@map("students")
 }
 

@@ -20,6 +20,24 @@ export const settingsController = {
     }
   },
 
+  createCanteenAmount: async (req: Request, res: Response) => {
+    const { amount } = req.body;
+
+    try {
+      const setting = await prisma.settings.create({
+        data: {
+          key: "canteen_amount",
+          value: amount.toString(),
+          category: "canteen",
+        },
+      });
+
+      res.status(201).json(setting);
+    } catch (error) {
+      console.error("Error creating canteen amount:", error);
+      res.status(500).json({ error: "Internal Server Error" });
+    }
+  },
   getSetting: async (req: Request, res: Response) => {
     const { key } = req.params;
 
@@ -75,13 +93,14 @@ export const settingsController = {
   getCanteenAmount: async (req: Request, res: Response) => {
     try {
       const setting = await prisma.settings.findUnique({
-        where: { key: "canteen_daily_amount" },
+        where: { key: "canteen_amount" },
       });
 
+      const amount = parseFloat(setting?.value || "0");
+
       res.status(200).json({
-        data: {
-          value: setting?.value || "0",
-        },
+        amount: isNaN(amount) ? 0 : amount,
+        currency: "GHC", // Assuming the currency is GHC, adjust as necessary
       });
     } catch (error) {
       console.error("Error fetching canteen amount:", error);
@@ -94,10 +113,10 @@ export const settingsController = {
 
     try {
       const setting = await prisma.settings.upsert({
-        where: { key: "canteen_daily_amount" },
+        where: { key: "canteen_amount" },
         update: { value: amount.toString() },
         create: {
-          key: "canteen_daily_amount",
+          key: "canteen_amount",
           value: amount.toString(),
           category: "canteen",
         },

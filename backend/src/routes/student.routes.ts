@@ -19,15 +19,18 @@ router.get("/", asyncHandler(studentController.getAll));
 // Get student by ID
 router.get("/:id", asyncHandler(studentController.getById));
 
+// Get students by class ID
+router.get("/class/:classId", asyncHandler(studentController.getClassById));
+
 // Create new student
 router.post(
-  "/",
+  "/create",
   validate(createStudentSchema),
   asyncHandler(studentController.create)
 );
 
 // Update student
-router.put(
+router.patch(
   "/:id",
   validate(updateStudentSchema),
   asyncHandler(studentController.update)

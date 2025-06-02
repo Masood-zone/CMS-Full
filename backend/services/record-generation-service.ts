@@ -1,6 +1,5 @@
-import { PrismaClient, Prisma } from "@prisma/client";
-
-const prisma = new PrismaClient();
+import { Prisma } from "@prisma/client";
+import prisma from "../src/config/database";
 
 export const generateRecordsForNewStudent = async (studentId: number) => {
   try {
@@ -17,24 +16,24 @@ export const generateRecordsForNewStudent = async (studentId: number) => {
     }
 
     const settings = await prisma.settings.findFirst({
-      where: { name: "amount" },
+      where: { category: "record", key: "amount" },
     });
 
     const settingsAmount = settings ? parseInt(settings.value) : 0;
+
     const today = new Date();
-    today.setHours(0, 0, 0, 0);
 
     await prisma.record.create({
       data: {
         classId: student.class.id,
         payedBy: student.id,
-        submitedAt: today,
+        date: today,
         amount: 0,
         hasPaid: false,
         isPrepaid: false,
         isAbsent: false,
         settingsAmount,
-        submitedBy: student.class.supervisorId || student.class.id,
+        submitedBy: student.class.supervisorId || 1,
       },
     });
 

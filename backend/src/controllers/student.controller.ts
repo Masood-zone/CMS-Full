@@ -53,14 +53,35 @@ export const studentController = {
   },
 
   create: async (req: Request, res: Response) => {
-    const { name, age, gender, classId } = req.body;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      gender,
+      classId,
+      parentName,
+      parentPhone,
+      parentEmail,
+      address,
+      dateOfBirth,
+      isActive,
+    } = req.body;
     try {
       const newStudent = await prisma.student.create({
         data: {
-          name,
-          age: parseInt(age),
+          firstName,
+          lastName,
+          email,
+          phone,
           gender,
           classId,
+          parentName,
+          parentPhone,
+          parentEmail,
+          address,
+          dateOfBirth: dateOfBirth ? new Date(dateOfBirth) : undefined,
+          isActive: isActive !== undefined ? isActive : true,
         },
       });
 
@@ -69,21 +90,44 @@ export const studentController = {
       res.status(201).json(newStudent);
     } catch (error) {
       console.log(error);
-
       res.status(400).json({ error: `Error creating student ${error}` });
     }
   },
 
   update: async (req: Request, res: Response) => {
     const { id } = req.params;
-    const { name, age, gender } = req.body;
+    const {
+      firstName,
+      lastName,
+      email,
+      phone,
+      gender,
+      classId,
+      parentName,
+      parentPhone,
+      parentEmail,
+      address,
+      dateOfBirth,
+      isActive,
+    } = req.body;
     try {
       const updatedStudent = await prisma.student.update({
         where: { id: parseInt(id) },
         data: {
-          name,
-          age: parseInt(age),
-          gender,
+          ...(firstName !== undefined && { firstName }),
+          ...(lastName !== undefined && { lastName }),
+          ...(email !== undefined && { email }),
+          ...(phone !== undefined && { phone }),
+          ...(gender !== undefined && { gender }),
+          ...(classId !== undefined && { classId }),
+          ...(parentName !== undefined && { parentName }),
+          ...(parentPhone !== undefined && { parentPhone }),
+          ...(parentEmail !== undefined && { parentEmail }),
+          ...(address !== undefined && { address }),
+          ...(dateOfBirth !== undefined && {
+            dateOfBirth: new Date(dateOfBirth),
+          }),
+          ...(isActive !== undefined && { isActive }),
         },
       });
       res.json(updatedStudent);

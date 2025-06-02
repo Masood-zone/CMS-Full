@@ -8,6 +8,13 @@ const router = Router();
 // All routes require authentication
 router.use(authenticateToken);
 
+// Create canteen amount (super admin only)
+router.post(
+  "/canteen/amount",
+  requireRole(["SUPER_ADMIN"]),
+  asyncHandler(settingsController.createCanteenAmount)
+);
+
 // Get canteen daily amount
 router.get(
   "/canteen/amount",
