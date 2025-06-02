@@ -1,11 +1,11 @@
 import { DataTable } from "@/components/ui/data-table";
-import { useDeleteResource, useFetchClasses } from "@/services/api/queries";
 import { TableSkeleton } from "@/components/shared/page-loader/loaders";
 import { ColumnDef } from "@tanstack/react-table";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown } from "lucide-react";
 import ActionMenu from "@/components/actions/action-menu";
+import { useDeleteResource, useFetchClasses } from "@/services/api";
 
 export default function StudentsTable({
   data,
@@ -43,7 +43,6 @@ export default function StudentsTable({
       enableHiding: false,
     },
     {
-      accessorKey: "name",
       header: ({ column }) => {
         return (
           <Button
@@ -54,6 +53,15 @@ export default function StudentsTable({
             <ArrowUpDown className="ml-2 h-4 w-4" />
           </Button>
         );
+      },
+      accessorFn: (row) => `${row.firstName} ${row.lastName}`,
+      id: "fullName",
+      sortingFn: (a, b) => {
+        const aName =
+          `${a.original.firstName} ${a.original.lastName}`.toLowerCase();
+        const bName =
+          `${b.original.firstName} ${b.original.lastName}`.toLowerCase();
+        return aName.localeCompare(bName);
       },
     },
     {
