@@ -16,7 +16,7 @@ router.get(
   asyncHandler(userController.getAll)
 );
 router.get("/:id", asyncHandler(userController.getById));
-router.put(
+router.patch(
   "/:id",
   validate(userValidation.updateUserSchema),
   asyncHandler(userController.update)

@@ -1,10 +1,12 @@
 import { AnalyticsCard } from "@/components/shared/cards/analytic-cards";
 import { CardsSkeleton } from "@/components/shared/page-loader/loaders";
-import { useAdminDashboardAnalytics } from "@/services/api/queries";
+import { useAdminDashboardAnalytics } from "@/services/api";
 import { BookOpen, CurrencyIcon, School, Users } from "lucide-react";
 
 export default function AdminHome() {
   const { data: analytics, isLoading, error } = useAdminDashboardAnalytics();
+  const { totalAdmins, totalStudents, totalCollections, totalClasses } =
+    analytics?.overview || {};
 
   return (
     <>
@@ -21,25 +23,25 @@ export default function AdminHome() {
           <div className="grid auto-rows-min gap-4 md:grid-cols-2 lg:grid-cols-4">
             <AnalyticsCard
               title="Total Admins"
-              value={analytics?.totalAdmins || 0}
+              value={totalAdmins || 0}
               icon={<Users className="size-6 text-muted-foreground" />}
               notice="Total number of admins in the school"
             />
             <AnalyticsCard
               title="Total Students"
-              value={analytics?.totalStudents || 0}
+              value={totalStudents || 0}
               icon={<School className="size-6 text-muted-foreground" />}
               notice="Total number of students in the school"
             />
             <AnalyticsCard
               title="Total Collections"
-              value={`₵${analytics?.totalCollections || 0}`}
+              value={`₵${totalCollections || 0}`}
               icon={<CurrencyIcon className="size-6 text-muted-foreground" />}
               notice="Total expected amount based on all canteen collections"
             />
             <AnalyticsCard
               title="Total Classes"
-              value={analytics?.totalClasses || 0}
+              value={totalClasses || 0}
               icon={<BookOpen className="size-6 text-muted-foreground" />}
               notice="Total number of classes in the school"
             />

@@ -18,7 +18,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useForm } from "react-hook-form";
-import { useUpdateUser } from "@/services/api/queries";
+import { useUpdateUser } from "@/services/api";
 
 export default function Profile() {
   const { mutate: updateUser, isLoading } = useUpdateUser();
@@ -31,7 +31,7 @@ export default function Profile() {
     formState: { errors },
   } = useForm<FormUser>();
 
-  const userData = user?.user;
+  const userData = user;
   const gender = watch("gender");
   const onSubmit = async (data: FormUser) => {
     try {

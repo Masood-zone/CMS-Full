@@ -10,18 +10,23 @@ import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-  useCreateRecordsAmount,
-  useFetchRecordsAmount,
-  useUpdateRecordsAmount,
-} from "@/services/api/queries";
+// import {
+//   usecreateCanteenAmount,
+//   useFetchRecordsAmount,
+//   useUpdateRecordsAmount,
+// } from "@/services/api/queries";
 import { Skeleton } from "@/components/ui/skeleton";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
+import {
+  usecreateCanteenAmount,
+  useFetchRecordsAmount,
+  useUpdateRecordsAmount,
+} from "@/services/api";
 
 export default function Canteen() {
-  const { mutate: createRecordsAmount, isLoading: creatingPriceLoader } =
-    useCreateRecordsAmount();
+  const { mutate: createCanteenAmount, isLoading: creatingPriceLoader } =
+    usecreateCanteenAmount();
   const { mutate: updateRecordsAmount, isLoading: updatingPriceLoader } =
     useUpdateRecordsAmount();
   const { data: amountSetting, isLoading, error } = useFetchRecordsAmount();
@@ -36,7 +41,7 @@ export default function Canteen() {
       toast.error("Failed to fetch records amount.");
     }
     if (amountSetting) {
-      setPrice(amountSetting?.setting?.value || ""); // Populate initial price
+      setPrice(amountSetting?.amount || ""); // Populate initial price
     }
   }, [error, amountSetting]);
 
@@ -68,7 +73,7 @@ export default function Canteen() {
       return;
     }
 
-    createRecordsAmount(
+    createCanteenAmount(
       { value: String(price) },
       {
         onSuccess: () => {

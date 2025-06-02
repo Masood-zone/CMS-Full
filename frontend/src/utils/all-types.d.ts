@@ -52,6 +52,7 @@ type RecordsAmount = {
   id?: number;
   name?: string;
   value?: string;
+  amount?: number;
 };
 
 type Teacher = {
