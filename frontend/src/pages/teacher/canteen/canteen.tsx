@@ -68,7 +68,7 @@ export default function Canteen() {
   };
 
   const handleGenerateRecords = () => {
-    generateRecords({ classId, date: selectedDate.toISOString(), adminId: 0 });
+    generateRecords({ classId, date: selectedDate.toISOString(), adminId: 0 }); //Admin ID should be populated, not zero 0
   };
 
   const columns: ColumnDef<CanteenRecord>[] = [
