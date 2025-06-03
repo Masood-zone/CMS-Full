@@ -87,15 +87,15 @@ export const analyticsController = {
 
       res.status(200).json({
         overview: {
-          totalAdmins,
-          totalStudents,
-          totalClasses,
-          totalCollections: totalCollections._sum.amount || 0,
-          totalExpenses: totalExpenses._sum.amount || 0,
-          totalOwings: totalOwings._sum.amount || 0,
+          totalAdmins: Number(totalAdmins),
+          totalStudents: Number(totalStudents),
+          totalClasses: Number(totalClasses),
+          totalCollections: Number(totalCollections._sum.amount) || 0,
+          totalExpenses: Number(totalExpenses._sum.amount) || 0,
+          totalOwings: Number(totalOwings._sum.amount) || 0,
         },
-        recentActivity: recentRecords,
-        monthlyStats,
+        // recentActivity: recentRecords,
+        // monthlyStats,
       });
     } catch (error) {
       console.error("Error fetching admin analytics:", error);
