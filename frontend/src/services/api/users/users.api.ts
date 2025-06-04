@@ -19,7 +19,18 @@ export const updateUser = async (data: FormUser) => {
 export const fetchSupervisors = async () => {
   try {
     const response = await apiClient.get("/users");
-    return response.data;
+    // Filter Teachers and their classes array should be empty
+    const supervisors = response.data.filter(
+      (user: {
+        role: string;
+        classes: {
+          id: number;
+          name: string;
+          supervisorId: number | null;
+        }[];
+      }) => user.role === "TEACHER" && user.classes.length === 0
+    );
+    return supervisors;
   } catch (error) {
     console.error("Error fetching supervisors:", error);
     throw error;

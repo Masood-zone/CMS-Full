@@ -20,8 +20,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useCreateClass, useFetchSupervisors } from "@/services/api/queries";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { useCreateClass, useFetchSupervisors } from "@/services/api";
 
 export default function AddClass() {
   const {
@@ -87,14 +87,21 @@ export default function AddClass() {
                   <SelectValue placeholder="Select a teacher" />
                 </SelectTrigger>
                 <SelectContent>
-                  {supervisors?.map((teacher: Teacher) => (
-                    <SelectItem
-                      key={teacher?.id}
-                      value={teacher?.id?.toString() || ""}
-                    >
-                      {teacher.name}
+                  {supervisors && supervisors.length > 0 ? (
+                    supervisors.map((teacher: Teacher) => (
+                      <SelectItem
+                        key={teacher?.id}
+                        value={teacher?.id?.toString() || ""}
+                      >
+                        {teacher.name}
+                      </SelectItem>
+                    ))
+                  ) : (
+                    <SelectItem value="no_teacher" disabled>
+                      No teachers found. Please create a teacher and assign a
+                      class.
                     </SelectItem>
-                  ))}
+                  )}
                 </SelectContent>
               </Select>
             </div>

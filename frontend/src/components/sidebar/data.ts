@@ -20,6 +20,10 @@ export const super_nav = {
       icon: Bot,
       items: [
         {
+          title: "Teachers",
+          url: "/admin/teachers",
+        },
+        {
           title: "Students",
           url: "/admin/students",
         },

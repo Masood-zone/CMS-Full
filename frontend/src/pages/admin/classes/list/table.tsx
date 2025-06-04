@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
-import { useDeleteResource } from "@/services/api/queries";
 import { TableSkeleton } from "@/components/shared/page-loader/loaders";
+import { useDeleteResource } from "@/services/api";
 
 export default function ClassesTable({
   data,
