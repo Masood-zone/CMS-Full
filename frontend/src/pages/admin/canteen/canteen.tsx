@@ -129,20 +129,7 @@ export default function CanteenRecords() {
   }
 
   const calculateTotals = (records: Record[]) => {
-    const totalPaid = records.reduce(
-      (sum, record) => sum + (record.hasPaid ? record.amount : 0),
-      0
-    );
-    const totalUnpaid = records.reduce(
-      (sum, record) =>
-        sum + (!record.hasPaid && !record.isAbsent ? record.amount : 0),
-      0
-    );
-    const totalAbsent = records.reduce(
-      (sum, record) => sum + (record.isAbsent ? record.amount : 0),
-      0
-    );
-    const totalAmount = totalPaid + totalUnpaid + totalAbsent;
+    const totalAmount = records.reduce((sum, record) => sum + record.amount, 0);
     const paidCount = records.filter((record) => record.hasPaid).length;
     const unpaidCount = records.filter(
       (record) => !record.hasPaid && !record.isAbsent
@@ -190,7 +177,7 @@ export default function CanteenRecords() {
         <TabsList>
           <TabsTrigger value="all">All Records</TabsTrigger>
           <TabsTrigger value="prepayments">Prepayments</TabsTrigger>
-          <TabsTrigger value="owings">Owings</TabsTrigger>
+          {/* <TabsTrigger value="owings">Owings</TabsTrigger> */}
         </TabsList>
         <TabsContent value="all">
           {isLoading ? (
@@ -229,7 +216,10 @@ export default function CanteenRecords() {
                         <CardDescription className="text-lg">
                           <span className="">Gross:</span>{" "}
                           <span className="text-primary font-bold">
-                            ₵{totals.totalAmount.toFixed(2)}
+                            ₵
+                            {typeof totals?.totalAmount === "string"
+                              ? parseInt(totals?.totalAmount).toFixed(2)
+                              : ""}
                           </span>
                         </CardDescription>
                       </CardHeader>

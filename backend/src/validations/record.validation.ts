@@ -1,4 +1,4 @@
-import { z } from "zod"
+import { z } from "zod";
 
 export const recordValidation = {
   generateDaily: z.object({
@@ -11,13 +11,15 @@ export const recordValidation = {
 
   submit: z.object({
     body: z.object({
-      classId: z.string(),
+      classId: z.number(),
       date: z.string(),
       unpaidStudents: z.array(z.any()),
       paidStudents: z.array(z.any()),
       absentStudents: z.array(z.any()),
-      submittedBy: z.string(),
-      paymentType: z.enum(["DAILY", "WEEKLY", "MONTHLY", "TERMLY"]).default("DAILY"),
+      submittedBy: z.number(),
+      paymentType: z
+        .enum(["DAILY", "WEEKLY", "MONTHLY", "TERMLY"])
+        .default("DAILY"),
     }),
   }),
 
@@ -47,4 +49,4 @@ export const recordValidation = {
       isAbsent: z.boolean(),
     }),
   }),
-}
+};

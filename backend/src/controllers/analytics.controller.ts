@@ -231,50 +231,68 @@ export const analyticsController = {
   getTeacherByIdAnalytics: async (req: Request, res: Response) => {
     const { id } = req.params;
     try {
+      // 1. Find the teacher
       const teacher = await prisma.user.findUnique({
         where: { id: Number.parseInt(id) },
-        include: {
-          classes: {
-            include: {
-              students: true,
-              records: {
-                where: {
-                  date: {
-                    gte: new Date(new Date().setHours(0, 0, 0, 0)),
-                    lt: new Date(new Date().setHours(23, 59, 59, 999)),
-                  },
-                },
-                include: { student: true },
-              },
-            },
-          },
-        },
+        select: { id: true, name: true, email: true },
       });
-
       if (!teacher) {
         return res.status(404).json({ error: "Teacher not found" });
       }
 
-      // Flatten all students from all classes
-      const students = teacher.classes.flatMap((cls) => cls.students);
-      // Flatten all today's records from all classes
-      const todaysRecords = teacher.classes.flatMap((cls) => cls.records);
-      // Total amount for today
+      // 2. Find all classes supervised by this teacher
+      const classes = await prisma.class.findMany({
+        where: { supervisorId: teacher.id },
+        include: { students: true },
+      });
+
+      // 3. Get all students in these classes
+      const allStudentIds = classes.flatMap((cls) =>
+        cls.students.map((stu) => stu.id)
+      );
+      const students = classes.flatMap((cls) => cls.students);
+
+      // 4. Get all today's records for these students (by payedBy) and classes (by classId)
+      const todayStart = new Date();
+      todayStart.setHours(0, 0, 0, 0);
+      const todayEnd = new Date();
+      todayEnd.setHours(23, 59, 59, 999);
+
+      // Fetch all records for today for these students and classes
+      const todaysRecords = await prisma.record.findMany({
+        where: {
+          payedBy: { in: allStudentIds.length > 0 ? allStudentIds : [0] },
+          classId: {
+            in: classes.length > 0 ? classes.map((cls) => cls.id) : [0],
+          },
+          date: { gte: todayStart, lte: todayEnd },
+        },
+        include: { student: true, class: true },
+      });
+
+      // 5. Aggregate analytics
+      const totalStudents = students.length;
       const totalAmount = todaysRecords.reduce(
         (sum, rec) => sum + Number(rec.amount),
         0
       );
-      // Paid and unpaid students for today (counts only)
       const paidCount = todaysRecords.filter((rec) => rec.hasPaid).length;
       const unpaidCount = todaysRecords.filter((rec) => !rec.hasPaid).length;
 
+      // 6. Attach records to classes for response
+      const classesWithRecords = classes.map((cls) => ({
+        id: cls.id,
+        name: cls.name,
+        students: cls.students,
+        records: todaysRecords.filter((rec) => rec.classId === cls.id),
+      }));
+
       res.status(200).json({
-        teacher: {
-          id: teacher.id,
-          name: teacher.name,
-          email: teacher.email,
-        },
-        totalStudents: students.length,
+        teacher,
+        classes: classesWithRecords,
+        students,
+        todaysRecords,
+        totalStudents,
         totalAmount,
         paidCount,
         unpaidCount,

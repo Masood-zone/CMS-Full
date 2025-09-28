@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/authStore";
-import {
-  useStudentRecordsByClassAndDate,
-  useSubmitAdminRecord,
-} from "@/services/api/queries";
+// import {
+//   useStudentRecordsByClassAndDate,
+//   useSubmitAdminRecord,
+// } from "@/services/api/queries";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -18,14 +18,18 @@ import { cn } from "@/lib/utils";
 import { TableSkeleton } from "@/components/shared/page-loader/loaders";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import {
+  useStudentRecordsByClassAndDate,
+  useSubmitAdminRecord,
+} from "@/services/api";
 
 export default function SubmitCanteenRecords() {
   const navigate = useNavigate();
-  const { user, assigned_class } = useAuthStore();
+  const { user } = useAuthStore();
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [records, setRecords] = useState<CanteenRecord[]>([]);
 
-  const classId = assigned_class?.id ?? 0;
+  const classId = user?.classes?.[0]?.id ?? 0;
   const formattedDate = selectedDate.toISOString().split("T")[0];
 
   const {
@@ -38,7 +42,14 @@ export default function SubmitCanteenRecords() {
 
   useEffect(() => {
     if (studentRecords) {
-      setRecords(studentRecords);
+      // If studentRecords is an object with .data, extract the array
+      if (Array.isArray(studentRecords)) {
+        setRecords(studentRecords);
+      } else if (typeof studentRecords === "object" && studentRecords.data) {
+        setRecords(studentRecords.data);
+      } else {
+        setRecords([]);
+      }
     }
   }, [studentRecords]);
 
@@ -73,7 +84,7 @@ export default function SubmitCanteenRecords() {
           hasPaid: false,
           date: formattedDate,
         })),
-      submittedBy: user?.user?.id ?? 0,
+      submittedBy: user?.id ?? 0,
     };
 
     submitRecord(payload, {
@@ -105,7 +116,7 @@ export default function SubmitCanteenRecords() {
   if (error) return <div>Error fetching student records</div>;
 
   return (
-    <div className="container mx-auto py-10">
+    <div className="container mx-auto ">
       <h1 className="text-2xl font-bold mb-4">Submit Canteen Records</h1>
       <div className="mb-4">
         <Label>Select Date</Label>
@@ -136,11 +147,11 @@ export default function SubmitCanteenRecords() {
           </PopoverContent>
         </Popover>
       </div>
-      <div className="space-y-4">
+      <div className="">
         {records?.map((record) => (
           <div key={record.id} className="flex items-center space-x-4">
             <span className="w-1/4">{record.student?.name}</span>
-            <span className="w-1/4">₵{record.settingsAmount.toFixed(2)}</span>
+            <span className="w-1/4">₵{record.settingsAmount}</span>
             <div className="flex items-center space-x-2">
               <Checkbox
                 id={`paid-${record.id}`}
