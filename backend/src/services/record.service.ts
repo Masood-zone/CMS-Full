@@ -277,7 +277,7 @@ export class RecordService {
 
     // Get settings amount
     const settings = await prisma.settings.findUnique({
-      where: { key: "canteen_daily_amount" },
+      where: { key: "canteen_amount" },
     });
     const settingsAmount = settings ? Number.parseFloat(settings.value) : 0;
 

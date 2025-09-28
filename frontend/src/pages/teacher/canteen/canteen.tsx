@@ -14,11 +14,6 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/authStore";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-// import {
-//   useStudentRecordsByClassAndDate,
-//   useUpdateStudentStatus,
-//   useGenerateStudentRecords,
-// } from "@/services/api/queries";
 import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -83,7 +78,7 @@ export default function Canteen() {
     {
       accessorKey: "settingsAmount",
       header: "Amount",
-      cell: ({ row }) => `₵${row.original.settingsAmount.toFixed(2)}`,
+      cell: ({ row }) => `₵${row.original.settingsAmount}`,
     },
     {
       accessorKey: "date",
@@ -227,7 +222,7 @@ export default function Canteen() {
           <TabsContent value="all">
             <CanteenTable
               columns={columns}
-              data={studentRecords || []}
+              data={studentRecords?.data || []}
               searchField="student.name"
             />
           </TabsContent>
