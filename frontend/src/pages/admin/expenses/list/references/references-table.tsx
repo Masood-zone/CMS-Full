@@ -1,6 +1,7 @@
 import { TableSkeleton } from "@/components/shared/page-loader/loaders";
 import { DataTable } from "@/components/ui/data-table";
-import { useDeleteResource, useFetchReferences } from "@/services/api/queries";
+
+import { useFetchReferences } from "@/services/api/expenses/expenses.queries";
 import ReferenceModal from "../../add/reference-modal";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -24,6 +25,7 @@ import {
 } from "@/components/ui/alert-dialog";
 import { MoreHorizontal } from "lucide-react";
 import EditReferenceModal from "../../edit/edit-reference-modal";
+import { useDeleteResource } from "@/services/api";
 
 export default function ReferencesTable() {
   const { data: references, isLoading, error } = useFetchReferences();

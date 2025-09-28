@@ -3,7 +3,7 @@ import { TableSkeleton } from "@/components/shared/page-loader/loaders";
 import ActionMenu from "@/components/actions/action-menu";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { useDeleteResource } from "@/services/api/queries";
+import { useDeleteTeacher } from "@/services/api/teachers/teachers.queries";
 import { ColumnDef } from "@tanstack/react-table";
 import { ArrowUpDown } from "lucide-react";
 
@@ -16,10 +16,7 @@ export default function TeachersTable({
   isLoading: boolean;
   error: unknown;
 }) {
-  const { mutateAsync: deleteTeacher } = useDeleteResource(
-    "teachers",
-    "teachers" // Query key
-  );
+  const { mutateAsync: deleteTeacher } = useDeleteTeacher();
 
   const columns: ColumnDef<Teacher>[] = [
     {
@@ -102,7 +99,7 @@ export default function TeachersTable({
       },
     },
     {
-      accessorKey: "assigned_class.name",
+      accessorKey: "classes",
       header: ({ column }) => {
         return (
           <Button
@@ -114,7 +111,7 @@ export default function TeachersTable({
         );
       },
       cell: ({ row }) => {
-        const className = row.original.assigned_class?.name;
+        const className = row.original.classes[0]?.name;
         return <span className="">{className || "Not assigned"}</span>;
       },
     },
@@ -127,7 +124,7 @@ export default function TeachersTable({
           <ActionMenu
             id={teacher?.id ?? 0}
             resourceName="Teacher"
-            onDelete={(id) => deleteTeacher(id)}
+            onDelete={(id) => deleteTeacher(Number(id))}
           />
         );
       },

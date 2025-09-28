@@ -1,4 +1,7 @@
-import { useFetchReference, useUpdateReference } from "@/services/api/queries";
+import {
+  useFetchReference,
+  useUpdateReference,
+} from "@/services/api/expenses/expenses.queries";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Button } from "@/components/ui/button";

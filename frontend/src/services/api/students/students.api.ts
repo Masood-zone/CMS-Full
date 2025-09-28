@@ -44,7 +44,7 @@ export const fetchStudent = async (id: number) => {
  */
 export const updateStudent = async (data: Student) => {
   try {
-    const response = await apiClient.put(`/students/${data.id}`, data);
+    const response = await apiClient.patch(`/students/update/${data.id}`, data);
     return response.data;
   } catch (error) {
     console.error("Error updating student:", error);

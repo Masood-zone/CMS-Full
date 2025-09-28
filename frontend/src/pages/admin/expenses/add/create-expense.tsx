@@ -27,7 +27,7 @@ import {
 
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
-import { useCreateExpense, useFetchReferences } from "@/services/api/queries";
+// import { useCreateExpense, useFetchReferences } from "@/services/api/queries";
 import { useAuthStore } from "@/store/authStore";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
@@ -35,6 +35,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import ReferenceModal from "./reference-modal";
+import { useCreateExpense, useFetchReferences } from "@/services/api";
 
 export default function AddExpense() {
   const {
@@ -50,7 +51,7 @@ export default function AddExpense() {
 
   const referenceId = watch("references.id");
   const formattedDate = selectedDate.toISOString().split("T")[0];
-  const submittedBy = user?.user?.id;
+  const submittedBy = user?.id;
   const { data: references } = useFetchReferences();
 
   const onSubmit = async (data: Expense) => {

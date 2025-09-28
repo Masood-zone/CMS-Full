@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/authStore";
-import { useTeacherSubmittedRecords } from "@/services/api/queries";
+import { useFetchSubmittedRecords } from "@/services/api/records/records.queries";
 import { Button } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import {
@@ -31,10 +31,15 @@ export default function SubmittedRecords() {
 
   const supervisorId = Number(assigned_class?.supervisorId) || 0;
   const {
-    data: submittedRecords,
+    data: allSubmittedRecords = [],
     isLoading,
     error,
-  } = useTeacherSubmittedRecords(supervisorId, formattedDate);
+  } = useFetchSubmittedRecords(formattedDate);
+  // If supervisorId is needed, filter here:
+  const submittedRecords = allSubmittedRecords.filter(
+    (record: { class: { supervisorId: number } }) =>
+      record.class?.supervisorId === supervisorId
+  );
 
   if (isLoading) return <TableSkeleton />;
   if (error) return <div>Error fetching submitted records</div>;

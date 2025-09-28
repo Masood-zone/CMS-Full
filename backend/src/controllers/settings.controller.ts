@@ -21,7 +21,12 @@ export const settingsController = {
   },
 
   createCanteenAmount: async (req: Request, res: Response) => {
-    const { amount } = req.body;
+    const { value } = req.body;
+    const amount = parseInt(value);
+
+    if (isNaN(amount) || amount < 0) {
+      return res.status(400).json({ error: "Invalid amount value" });
+    }
 
     try {
       const setting = await prisma.settings.create({
@@ -109,7 +114,12 @@ export const settingsController = {
   },
 
   updateCanteenAmount: async (req: Request, res: Response) => {
-    const { amount } = req.body;
+    const { value } = req.body;
+    const amount = parseInt(value);
+
+    if (isNaN(amount) || amount < 0) {
+      return res.status(400).json({ error: "Invalid amount value" });
+    }
 
     try {
       const setting = await prisma.settings.upsert({

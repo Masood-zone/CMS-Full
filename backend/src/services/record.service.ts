@@ -75,6 +75,21 @@ export class RecordService {
       },
     };
   }
+  async getOverallRecords() {
+    // Fetch all records with student and class info
+    const records = await prisma.record.findMany({
+      orderBy: {
+        date: "desc",
+      },
+    });
+
+    // Sum up the amount students are to pay (settingsAmount)
+    const totalAmount = records.reduce((sum, record) => {
+      return sum + Number(record.settingsAmount || 0);
+    }, 0);
+
+    return totalAmount;
+  }
 
   async getUnpaidStudents(params: GetUnpaidStudentsParams) {
     const { date, classId } = params;
@@ -98,7 +113,9 @@ export class RecordService {
       },
       student: {
         isNot: null,
-        isActive: true,
+        is: {
+          isActive: true,
+        },
       },
     };
 

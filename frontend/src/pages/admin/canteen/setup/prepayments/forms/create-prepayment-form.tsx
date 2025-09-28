@@ -47,9 +47,8 @@ export function PrepaymentForm({ adminId, classId }: PrepaymentFormProps) {
     expectedAmount,
   } = usePrepaymentForm(classId);
   const [isOpen, setIsOpen] = useState(false);
-  const canteenPrice = price?.setting?.value
-    ? parseFloat(price.setting.value)
-    : 0;
+
+  const canteenPrice = price?.amount ? parseFloat(price.amount) : 0;
   const handlePrepaymentSubmit = async (data: CreatePrepayment) => {
     if (!data.dateRange.from || !data.dateRange.to) {
       toast.error("Please select a valid date range");
@@ -63,6 +62,7 @@ export function PrepaymentForm({ adminId, classId }: PrepaymentFormProps) {
       numberOfDays: numberOfDays,
       amount: expectedAmount,
       classId,
+      studentId: Number(data.studentId),
       userId: adminId,
     };
 

@@ -20,8 +20,6 @@ This project is a **React** application powered by **TypeScript** and **Vite**, 
   - **Login**
   - **Forgot Password**
   - **Reset Password**
-  - **Contact Us**
-  - **Terms and Conditions**
 - Route protection for authenticated users based on roles.
 
 ### **Admin Dashboard**
@@ -42,7 +40,7 @@ This project is a **React** application powered by **TypeScript** and **Vite**, 
 
 - Navbar displaying the **current date, time, and day**.
 - Create **canteen records** for assigned classes:
-  - Only show **unpaid students** while creating records.
+- Only show **unpaid students** while creating records.
 - Manage and review records before submission to the admin.
 - **Table Component** for displaying canteen records.
 
@@ -93,7 +91,7 @@ src/
 
 ### **Prerequisites**
 
-- Node.js v16+ and npm v7+
+- Node.js v18+ and npm v7+
 - Code editor (e.g., VSCode)
 
 ### **Install Dependencies**

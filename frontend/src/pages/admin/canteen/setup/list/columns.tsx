@@ -15,16 +15,23 @@ export const columns = (
   {
     accessorKey: "student.name",
     header: "Student Name",
+    cell: ({ row }) =>
+      row.original.student
+        ? `${row.original.student.firstName} ${row.original.student.lastName}`
+        : "N/A",
   },
   {
     accessorKey: "settingsAmount",
     header: "Amount",
-    cell: ({ row }) => `₵${row.original.settingsAmount.toFixed(2)}`,
+    cell: ({ row }) => `₵${row.original.settingsAmount}`,
   },
   {
-    accessorKey: "submitedAt",
+    accessorKey: "createdAt",
     header: "Date",
-    cell: ({ row }) => format(new Date(row.original.submitedAt), "PPp"),
+    cell: ({ row }) =>
+      row?.original?.createdAt
+        ? format(new Date(row.original.createdAt), "PPp")
+        : "",
   },
   {
     accessorKey: "hasPaid",

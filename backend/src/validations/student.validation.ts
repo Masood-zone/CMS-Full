@@ -57,7 +57,7 @@ export const updateStudentSchema = z.object({
       .max(15, "Phone number too long")
       .optional()
       .nullable(),
-    classId: z.string().uuid("Invalid class ID").optional(),
+    classId: z.number().min(1, "Invalid class ID").optional(),
     parentName: z
       .string()
       .min(1, "Parent name is required")

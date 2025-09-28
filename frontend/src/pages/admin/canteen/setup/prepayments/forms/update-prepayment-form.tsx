@@ -19,7 +19,8 @@ import { Controller, useForm } from "react-hook-form";
 import { cn } from "@/lib/utils";
 import { format, eachDayOfInterval, isWeekend } from "date-fns";
 import { useState, useEffect } from "react";
-import { useFetchRecordsAmount } from "@/services/api/queries";
+import { useFetchRecordsAmount } from "@/services/api";
+// import { useFetchRecordsAmount } from "@/services/api/queries";
 
 interface UpdatePrepaymentModalProps {
   prepayment: Prepayment;
@@ -55,9 +56,7 @@ export function UpdatePrepaymentModal({
       const numberOfDays = days.filter((day) => !isWeekend(day)).length;
       setValue("numberOfDays", numberOfDays);
 
-      const canteenPrice = price?.setting?.value
-        ? parseFloat(price.setting.value)
-        : 0;
+      const canteenPrice = price?.amount ? parseFloat(price.amount) : 0;
       const expectedAmount = numberOfDays * canteenPrice;
       setValue("amount", expectedAmount);
     }
@@ -97,9 +96,7 @@ export function UpdatePrepaymentModal({
               )}
               <span className="text-2xl font-bold text-primary text-center px-2">
                 Gh₵
-                {price?.setting?.value
-                  ? parseFloat(price.setting.value).toFixed(2)
-                  : "0.00"}
+                {price?.amount ? parseFloat(price.amount).toFixed(2) : "0.00"}
               </span>
             </div>
           </div>

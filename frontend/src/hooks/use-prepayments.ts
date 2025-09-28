@@ -3,13 +3,13 @@ import { DateRange } from "react-day-picker";
 import { differenceInDays } from "date-fns";
 import { toast } from "sonner";
 import {
-  useFetchStudentsByClass,
-  useFetchRecordsAmount,
   useCreatePrepayment,
-  useFetchPrepaymentsByClass,
-  useUpdatePrepayment,
   useDeleteResource,
-} from "@/services/api/queries";
+  useFetchPrepaymentsByClass,
+  useFetchRecordsAmount,
+  useFetchStudentsByClass,
+  useUpdatePrepayment,
+} from "@/services/api";
 
 export function usePrepaymentTable(classId: string) {
   const { data: prepayments, isLoading } = useFetchPrepaymentsByClass(
@@ -71,9 +71,7 @@ export function usePrepaymentForm(classId: string) {
       ? differenceInDays(dateRange.to, dateRange.from) + 1
       : 0;
 
-  const canteenPrice = price?.setting?.value
-    ? parseFloat(price.setting.value)
-    : 0;
+  const canteenPrice = price?.amount ? parseFloat(price.amount) : 0;
   const expectedAmount = numberOfDays * canteenPrice;
 
   return {

@@ -1,22 +1,21 @@
 import { useState, useEffect } from "react";
 import { useAuthStore } from "@/store/authStore";
+import { toast } from "sonner";
 import {
   useFetchClasses,
-  useStudentRecordsByClassAndDate,
-  useUpdateStudentStatus,
-  useSubmitAdminRecord,
   useGenerateStudentRecords,
-} from "@/services/api/queries";
-import { toast } from "sonner";
+  useStudentRecordsByClassAndDate,
+  useSubmitAdminRecord,
+  useUpdateStudentStatus,
+} from "@/services/api";
 
 export function useCanteenSetup() {
   const { user } = useAuthStore();
-  const adminId = user?.user?.id;
+  const adminId = user?.id;
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
   const [selectedClassId, setSelectedClassId] = useState<string>("");
   const [records, setRecords] = useState<CanteenRecord[]>([]);
   const [activeTab, setActiveTab] = useState("daily");
-
   const formattedDate = selectedDate.toISOString().split("T")[0];
   const { data: classes, isLoading: classesLoading } = useFetchClasses();
   const { data: studentRecords, isLoading: recordsLoading } =
@@ -34,7 +33,14 @@ export function useCanteenSetup() {
 
   useEffect(() => {
     if (studentRecords) {
-      setRecords(studentRecords);
+      // If studentRecords is an object with .data, extract the array
+      if (Array.isArray(studentRecords)) {
+        setRecords(studentRecords);
+      } else if (typeof studentRecords === "object" && studentRecords.data) {
+        setRecords(studentRecords.data);
+      } else {
+        setRecords([]);
+      }
     }
   }, [studentRecords]);
 

@@ -158,6 +158,53 @@ const rootRoutes = createBrowserRouter(
           />
         </Route>
 
+        {/* Teachers */}
+        <Route
+          path="teachers"
+          lazy={async () => {
+            const { default: TeachersLayout } = await import(
+              "@/pages/admin/teachers"
+            );
+            return { Component: TeachersLayout };
+          }}
+        >
+          <Route
+            index
+            lazy={async () => {
+              const { default: Teachers } = await import(
+                "@/pages/admin/teachers/teachers"
+              );
+              return { Component: Teachers };
+            }}
+          />
+          <Route
+            path="add"
+            lazy={async () => {
+              const { default: AddTeacher } = await import(
+                "@/pages/admin/teachers/add/create-teacher"
+              );
+              return { Component: AddTeacher };
+            }}
+          />
+          <Route
+            path=":id"
+            lazy={async () => {
+              const { default: ViewTeacher } = await import(
+                "@/pages/admin/teachers/view/view-teacher"
+              );
+              return { Component: ViewTeacher };
+            }}
+          />
+          <Route
+            path=":id/edit"
+            lazy={async () => {
+              const { default: EditTeacher } = await import(
+                "@/pages/admin/teachers/edit/edit-teacher"
+              );
+              return { Component: EditTeacher };
+            }}
+          />
+        </Route>
         {/* Students */}
         <Route
           path="students"

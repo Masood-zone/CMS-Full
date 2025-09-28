@@ -8,7 +8,7 @@ import {
   TableHead,
   TableRow,
 } from "@/components/ui/table";
-import { useFetchTeacher } from "@/services/api/queries";
+import { useFetchTeacher } from "@/services/api/teachers/teachers.queries";
 import { Edit2Icon } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 

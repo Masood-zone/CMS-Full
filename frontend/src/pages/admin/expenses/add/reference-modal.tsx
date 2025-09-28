@@ -13,7 +13,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { useCreateReference } from "@/services/api/queries";
+import { useCreateReference } from "@/services/api/expenses/expenses.queries";
 import { PlusIcon } from "lucide-react";
 import { SubmitHandler, useForm } from "react-hook-form";
 

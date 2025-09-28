@@ -20,28 +20,101 @@ import { useNavigate } from "react-router-dom";
 import { CardsSkeleton } from "@/components/shared/page-loader/loaders";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
+  useFetchPrepayments,
   useFetchSubmittedRecords,
   useFetchUnpaidStudents,
-  useFetchPrepayments,
-} from "@/services/api/queries";
+} from "@/services/api";
 
 export default function CanteenRecords() {
   const navigate = useNavigate();
   const [date, setDate] = useState<Date>(new Date());
   const formattedDate = date.toISOString().split("T")[0];
   const {
-    data: submittedRecords,
+    data: submittedRecordsRaw,
     isLoading,
     error,
   } = useFetchSubmittedRecords(formattedDate);
+  interface SubmittedRecordGroup {
+    admin: { id: number; name: string };
+    records: Record[];
+  }
+
+  interface SubmittedRecordsResponse {
+    data: SubmittedRecordGroup[];
+  }
+
+  const submittedRecordsRawTyped = submittedRecordsRaw as
+    | SubmittedRecordsResponse
+    | SubmittedRecordGroup[]
+    | undefined;
+
+  const submittedRecords: SubmittedRecordGroup[] =
+    submittedRecordsRawTyped &&
+    typeof submittedRecordsRawTyped === "object" &&
+    "data" in submittedRecordsRawTyped
+      ? (submittedRecordsRawTyped as SubmittedRecordsResponse).data
+      : Array.isArray(submittedRecordsRawTyped)
+      ? (submittedRecordsRawTyped as SubmittedRecordGroup[])
+      : [];
   const {
-    data: owingStudents,
+    data: owingStudentsRaw,
     isLoading: owingStudentsLoading,
     error: owingStudentsError,
   } = useFetchUnpaidStudents(formattedDate);
+  interface OwingStudent {
+    id: number;
+    student: { id: number; name: string };
+    amount: number;
+    class: { name: string };
+    submitedAt: string;
+  }
 
-  const { data: prepayments, isLoading: prepaymentsLoading } =
-    useFetchPrepayments(); // Fetch all prepayments
+  interface OwingStudentsResponse {
+    data: OwingStudent[];
+  }
+
+  const owingStudentsRawTyped = owingStudentsRaw as
+    | OwingStudentsResponse
+    | OwingStudent[]
+    | undefined;
+
+  const owingStudents: OwingStudent[] =
+    owingStudentsRawTyped &&
+    typeof owingStudentsRawTyped === "object" &&
+    "data" in owingStudentsRawTyped
+      ? (owingStudentsRawTyped as OwingStudentsResponse).data
+      : Array.isArray(owingStudentsRawTyped)
+      ? (owingStudentsRawTyped as OwingStudent[])
+      : [];
+
+  const { data: prepaymentsRaw, isLoading: prepaymentsLoading } =
+    useFetchPrepayments();
+  interface Prepayment {
+    id: number;
+    student: { id: number; name: string };
+    amount: number;
+    numberOfDays: number;
+    startDate: string;
+    endDate: string;
+  }
+
+  interface PrepaymentsResponse {
+    data: Prepayment[];
+  }
+
+  const prepaymentsRawTyped = prepaymentsRaw as
+    | PrepaymentsResponse
+    | Prepayment[]
+    | undefined;
+
+  const prepayments: Prepayment[] =
+    prepaymentsRawTyped &&
+    typeof prepaymentsRawTyped === "object" &&
+    "data" in prepaymentsRawTyped
+      ? (prepaymentsRawTyped as PrepaymentsResponse).data
+      : Array.isArray(prepaymentsRawTyped)
+      ? (prepaymentsRawTyped as Prepayment[])
+      : [];
 
   const handleViewRecords = (adminId: number) => {
     navigate(`/admin/canteen-records/${adminId}/records`, {

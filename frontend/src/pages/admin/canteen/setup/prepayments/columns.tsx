@@ -13,7 +13,7 @@ export const columns = (
   {
     accessorKey: "amount",
     header: "Amount",
-    cell: ({ row }) => `₵${row.original.amount.toFixed(2)}`,
+    cell: ({ row }) => `₵${row.original.amount}`,
   },
   {
     accessorKey: "startDate",

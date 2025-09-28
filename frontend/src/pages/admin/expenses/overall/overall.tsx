@@ -1,32 +1,33 @@
-import { useFetchRecords } from "@/services/api/queries";
+import { useFetchRecords } from "@/services/api/records/records.queries";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Users, CreditCard, Receipt, Loader2 } from "lucide-react";
 
 export default function OverallTotals() {
-  const { data: overall, error, isLoading } = useFetchRecords();
+  const { data: overallRaw, error, isLoading } = useFetchRecords();
+  const overall = overallRaw ?? [];
 
   if (isLoading) return <Loader2 className="h-8 w-8 animate-spin" />;
   if (error) return <div>Error fetching records</div>;
 
-  const filterPaidStudents = overall?.filter(
-    (student: Student) => student.hasPaid === true
+  const filterPaidStudents = overall.filter(
+    (student) => student.hasPaid === true
   );
-  const filterUnpaidStudents = overall?.filter(
-    (student: Student) => student.hasPaid === false
+  const filterUnpaidStudents = overall.filter(
+    (student) => student.hasPaid === false
   );
 
-  const totalPaid = filterPaidStudents?.reduce(
-    (sum: number, student: Student) => sum + (student?.settingsAmount ?? 0),
+  const totalPaid = filterPaidStudents.reduce(
+    (sum, student) => sum + (student?.settingsAmount ?? 0),
     0
   );
 
-  const totalUnpaid = filterUnpaidStudents?.reduce(
-    (sum: number, student: Student) => sum + (student?.settingsAmount ?? 0),
+  const totalUnpaid = filterUnpaidStudents.reduce(
+    (sum, student) => sum + (student?.settingsAmount ?? 0),
     0
   );
 
-  const totalAmount = overall?.reduce(
-    (sum: number, student: Student) => sum + (student?.settingsAmount ?? 0),
+  const totalAmount = overall.reduce(
+    (sum, student) => sum + (student?.settingsAmount ?? 0),
     0
   );
 

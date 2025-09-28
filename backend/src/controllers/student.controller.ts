@@ -101,6 +101,7 @@ export const studentController = {
     const {
       firstName,
       lastName,
+      name,
       email,
       phone,
       age,
@@ -118,6 +119,7 @@ export const studentController = {
         where: { id: parseInt(id) },
         data: {
           ...(firstName !== undefined && { firstName }),
+          ...(name !== undefined && { name }),
           ...(age !== undefined && { age: parseInt(age) }),
           ...(lastName !== undefined && { lastName }),
           ...(email !== undefined && { email }),

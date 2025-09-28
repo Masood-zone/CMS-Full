@@ -31,7 +31,7 @@ router.post(
 
 // Update student
 router.patch(
-  "/:id",
+  "/update/:id",
   validate(updateStudentSchema),
   asyncHandler(studentController.update)
 );

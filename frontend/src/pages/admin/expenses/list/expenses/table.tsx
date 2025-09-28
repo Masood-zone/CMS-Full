@@ -1,16 +1,15 @@
-import {
-  useDeleteResource,
-  useFetchExpenses,
-  useFetchRecords,
-} from "@/services/api/queries";
+import { useFetchExpenses } from "@/services/api/expenses/expenses.queries";
+import { useFetchOverallRecords } from "@/services/api/records/records.queries";
+
 import { expensesColumn } from "./columns";
 import { TableSkeleton } from "@/components/shared/page-loader/loaders";
 import { ExpensesDataTable } from "@/components/tables/expenses-table";
 import { useEffect, useMemo } from "react";
+import { useDeleteResource } from "@/services/api";
 
 export default function ExpensesTable() {
   const { data: expenses, isLoading, error } = useFetchExpenses();
-  const { data: overall, error: recordsError } = useFetchRecords();
+  const { data: overall, error: recordsError } = useFetchOverallRecords();
 
   useEffect(() => {
     if (recordsError) {
@@ -24,12 +23,6 @@ export default function ExpensesTable() {
       0
     );
   }, [expenses]);
-  const totalCollection = useMemo(() => {
-    return overall?.reduce(
-      (sum: number, student: Student) => sum + (student?.settingsAmount ?? 0),
-      0
-    );
-  }, [overall]);
 
   const { mutateAsync: deleteExpense } = useDeleteResource(
     "expenses",
@@ -46,7 +39,7 @@ export default function ExpensesTable() {
         columns={expensesColumn(deleteExpense)}
         searchField="description"
         calculateTotal={calculateExpensesTotal}
-        overallTotal={totalCollection}
+        overallTotal={overall}
       />
     </>
   );

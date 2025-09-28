@@ -31,7 +31,7 @@ export const getPresetAmount = async () => {
  */
 export const createCanteenAmount = async (data: RecordsAmount) => {
   try {
-    const response = await apiClient.post("/settings/amount", data);
+    const response = await apiClient.post("/settings/canteen/amount", data);
     return response.data;
   } catch (error) {
     console.error("Error creating preset amount:", error);
@@ -44,7 +44,7 @@ export const createCanteenAmount = async (data: RecordsAmount) => {
  */
 export const updateRecordsAmount = async (data: RecordsAmount) => {
   try {
-    const response = await apiClient.put("/settings/amount", data);
+    const response = await apiClient.put("/settings/canteen/amount", data);
     return response.data;
   } catch (error) {
     console.error("Error updating preset amount:", error);

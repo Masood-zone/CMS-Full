@@ -37,7 +37,7 @@ interface DataTableProps<TData, TValue> {
   data: TData[];
   searchField?: string;
   calculateTotal: number;
-  overallTotal: number;
+  overallTotal?: number;
 }
 
 export function ExpensesDataTable<TData, TValue>({
@@ -74,7 +74,7 @@ export function ExpensesDataTable<TData, TValue>({
     },
   });
 
-  const remainingAmount = overallTotal - calculateTotal;
+  const remainingAmount = overallTotal ? overallTotal - calculateTotal : 0;
   return (
     <div className="w-full">
       <div className="flex items-center py-4">

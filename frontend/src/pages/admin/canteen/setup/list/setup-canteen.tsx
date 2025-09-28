@@ -118,7 +118,7 @@ export default function SetupCanteen() {
           ) : (
             <CanteenTable
               columns={columns(handleUpdateStatus, updatingLoader)}
-              data={records}
+              data={records || []}
             />
           )}
         </TabsContent>

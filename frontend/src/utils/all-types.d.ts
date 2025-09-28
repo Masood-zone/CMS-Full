@@ -69,6 +69,7 @@ type Teacher = {
   id?: number;
   name: string;
   phone: string;
+  classes: Array<{ id: number; name: string }>;
   assigned_class?: {
     id: number;
     name: string;
@@ -116,12 +117,16 @@ type CanteenRecord = {
   hasPaid: boolean;
   classId: number;
   settingsAmount: number;
+  createdAt?: string | number | Date;
+  updatedAt?: string;
+  notes?: string;
   isAbsent: boolean;
   date: string;
   student: {
     id: number;
     firstName: string;
     lastName: string;
+    name: string;
   } | null;
 };
 

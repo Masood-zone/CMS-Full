@@ -9,6 +9,7 @@ interface User {
   phone?: string;
   gender?: string;
   classes?: Array<{ id: number; name: string }>;
+  assigned_class?: { id: number; name: string };
 }
 
 interface AuthState {

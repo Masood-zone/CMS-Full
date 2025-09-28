@@ -22,7 +22,12 @@ import {
   useFetchExpense,
   useFetchReferences,
   useUpdateExpense,
-} from "@/services/api/queries";
+} from "@/services/api";
+// import {
+//   useFetchExpense,
+//   useFetchReferences,
+//   useUpdateExpense,
+// } from "@/services/api/queries";
 import { useAuthStore } from "@/store/authStore";
 import { format, parseISO } from "date-fns";
 import { CalendarIcon } from "lucide-react";
@@ -46,7 +51,7 @@ export default function EditExpense() {
   const reference = references?.find(
     (reference: Reference) => reference?.id === expense?.reference?.id
   );
-  const submitterId = user?.user?.id;
+  const submitterId = user?.id;
   const { mutate: updateExpense, isLoading: updatingExpense } =
     useUpdateExpense();
 

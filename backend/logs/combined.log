@@ -356,3 +356,510 @@
 {"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-06-03 14:28:41"}
 {"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-06-03 14:28:41"}
 {"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-06-03 14:28:41"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 12:31:52"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 12:31:52"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 12:31:52"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 12:31:52"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 12:31:52"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 12:32:50"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 12:32:50"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 12:32:50"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 12:32:50"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 12:32:50"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:35:50"}
+{"level":"info","message":"Schema (re)uploaded (hash: f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc)","service":"canteen-api","timestamp":"2025-09-28 12:35:53"}
+{"level":"warn","message":"Attempt 1/3 failed for querying: This request must be retried","service":"canteen-api","timestamp":"2025-09-28 12:35:53"}
+{"level":"warn","message":"Retrying after 38ms","service":"canteen-api","timestamp":"2025-09-28 12:35:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=1)","service":"canteen-api","timestamp":"2025-09-28 12:35:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:35:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:36:06"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:36:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:36:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:38:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:39:23"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:40:43"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:40:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:44:59"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:45:00"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:46:47"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:51"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:48:51"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:40"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:41"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:42"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:42"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:42"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:49:50"}
+{"level":"warn","message":"Attempt 1/3 failed for querying: Cannot fetch data from service:\nfetch failed","service":"canteen-api","timestamp":"2025-09-28 12:50:01"}
+{"level":"warn","message":"Retrying after 55ms","service":"canteen-api","timestamp":"2025-09-28 12:50:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=1)","service":"canteen-api","timestamp":"2025-09-28 12:50:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:50:57"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:50:59"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:53:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:53:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:53:17"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:53:18"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:53:31"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:28"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 12:54:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:03:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:03:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:04:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:04:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:04:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:05:03"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:06:44"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:06:44"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:06:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:06:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:08:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:08:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:31"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:09:31"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:10:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:10:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:12:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:12:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:13:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:13:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:13:52"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:13:52"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:14:20"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:23"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:15:23"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:16:00"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:17:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:17:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:20:41"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:20:41"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:20:42"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:20:43"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:20:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:22:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:23:45"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:24:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:24:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:24:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:24:31"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:24:40"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:26:13"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 13:26:45"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 13:26:45"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 13:26:45"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 13:26:45"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 13:26:45"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:26:46"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 13:27:12"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 13:27:12"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 13:27:12"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 13:27:12"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 13:27:12"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:27:17"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 13:27:57"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 13:27:57"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 13:27:57"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 13:27:57"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 13:27:57"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:27:58"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:27:58"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:03"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:20"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:20"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:28:22"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:29:27"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:30:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:30:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:30:15"}
+{"level":"error","message":"\nInvalid `prisma.expense.findUnique()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\controllers\\expenses.controller.ts:179:44\n\n  176 try {\n  177   const { id } = req.params;\n  178 \n→ 179   const expense = await prisma.expense.findUnique({\n          where: {\n        +   id: Int\n          },\n          include: {\n            reference: true\n          }\n        })\n\nArgument `id` is missing.","service":"canteen-api","timestamp":"2025-09-28 13:30:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:30:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 13:30:16"}
+{"level":"error","message":"\nInvalid `prisma.expense.findUnique()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\controllers\\expenses.controller.ts:179:44\n\n  176 try {\n  177   const { id } = req.params;\n  178 \n→ 179   const expense = await prisma.expense.findUnique({\n          where: {\n        +   id: Int\n          },\n          include: {\n            reference: true\n          }\n        })\n\nArgument `id` is missing.","service":"canteen-api","timestamp":"2025-09-28 13:30:17"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:20:53"}
+{"level":"info","message":"Schema (re)uploaded (hash: f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc)","service":"canteen-api","timestamp":"2025-09-28 14:20:55"}
+{"level":"warn","message":"Attempt 1/3 failed for querying: This request must be retried","service":"canteen-api","timestamp":"2025-09-28 14:20:55"}
+{"level":"warn","message":"Retrying after 64ms","service":"canteen-api","timestamp":"2025-09-28 14:20:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=1)","service":"canteen-api","timestamp":"2025-09-28 14:20:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:20:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:21:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:21:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:21:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:21:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:22:17"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:23:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:23:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:31:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:31:39"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:32:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:33:06"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:34:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:35:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:36:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:36:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:00"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:27"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:33"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:36"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:37:39"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:39:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:40:02"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:40:04"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:44:46"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:44:46"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:44:46"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:44:46"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:44:46"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:44:50"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:44:50"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:44:50"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:44:50"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:44:50"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:44:58"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:45:31"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:46:16"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:46:16"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:46:16"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:46:16"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:46:16"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:49:34"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:49:34"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:49:34"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:49:34"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:49:34"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:49:41"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:49:41"}
+{"level":"error","message":"\nInvalid `prisma.record.findMany()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\services\\record.service.ts:109:32\n\n  106   whereClause.classId = Number(classId);\n  107 }\n  108 \n→ 109 return await prisma.record.findMany({\n        where: {\n          hasPaid: false,\n          isAbsent: false,\n          date: {\n            gte: new Date(\"2025-09-28T00:00:00.000Z\"),\n            lte: new Date(\"2025-09-28T23:59:59.999Z\")\n          },\n          student: {\n            isNot: null,\n            isActive: true,\n            ~~~~~~~~\n      ?     is?: StudentWhereInput | Null\n          },\n          classId: 1\n        },\n        include: {\n          student: true,\n          class: true\n        },\n        orderBy: {\n          date: \"desc\"\n        }\n      })\n\nUnknown argument `isActive`. Available options are marked with ?.","service":"canteen-api","timestamp":"2025-09-28 14:49:42"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:50:46"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:50:46"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:50:46"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:50:46"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:50:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:50:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:50:49"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:52:22"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:52:22"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:52:22"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:52:22"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:52:22"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:52:34"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:52:34"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:52:34"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:52:34"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:52:34"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:53:51"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:53:51"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:53:51"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:53:51"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:53:51"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:53:54"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:53:54"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:53:54"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:53:54"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:53:54"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:53:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:54:14"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 14:57:18"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 14:57:18"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 14:57:18"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 14:57:18"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 14:57:18"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:57:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:57:20"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:57:40"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:57:40"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 14:57:40"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:00:15"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:00:15"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:00:15"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:00:15"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:00:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:00:54"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:00:54"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:00:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:00:55"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:03:55"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:03:55"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:03:55"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:03:55"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:03:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:05"}
+{"level":"error","message":"\nInvalid `prisma.expense.findUnique()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\controllers\\expenses.controller.ts:179:44\n\n  176 try {\n  177   const { id } = req.params;\n  178 \n→ 179   const expense = await prisma.expense.findUnique({\n          where: {\n        +   id: Int\n          },\n          include: {\n            reference: true\n          }\n        })\n\nArgument `id` is missing.","service":"canteen-api","timestamp":"2025-09-28 15:04:05"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:04:08"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:05:01"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:05:01"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:05:01"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:05:01"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:05:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:05:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:05:12"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:05:53"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:05:53"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:05:53"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:05:53"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:05:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:05:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:05:55"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:06:58"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:06:58"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:06:58"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:06:58"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:06:58"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:13:21"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:13:21"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:13:21"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:13:21"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:13:21"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:13:53"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:13:53"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:13:53"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:13:53"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:13:53"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:16:10"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:16:10"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:16:10"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:16:10"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:16:10"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:16:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:16:16"}
+{"level":"warn","message":"Attempt 1/3 failed for querying: Cannot fetch data from service:\nfetch failed","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"warn","message":"Attempt 1/3 failed for querying: Cannot fetch data from service:\nfetch failed","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"warn","message":"Retrying after 34ms","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=1)","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"warn","message":"Retrying after 65ms","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=1)","service":"canteen-api","timestamp":"2025-09-28 15:16:27"}
+{"level":"info","message":"Schema (re)uploaded (hash: f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc)","service":"canteen-api","timestamp":"2025-09-28 15:16:30"}
+{"level":"warn","message":"Attempt 2/3 failed for querying: This request must be retried","service":"canteen-api","timestamp":"2025-09-28 15:16:30"}
+{"level":"warn","message":"Retrying after 73ms","service":"canteen-api","timestamp":"2025-09-28 15:16:31"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=2)","service":"canteen-api","timestamp":"2025-09-28 15:16:31"}
+{"level":"info","message":"Schema (re)uploaded (hash: f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc)","service":"canteen-api","timestamp":"2025-09-28 15:16:32"}
+{"level":"warn","message":"Attempt 2/3 failed for querying: This request must be retried","service":"canteen-api","timestamp":"2025-09-28 15:16:32"}
+{"level":"warn","message":"Retrying after 136ms","service":"canteen-api","timestamp":"2025-09-28 15:16:32"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=2)","service":"canteen-api","timestamp":"2025-09-28 15:16:32"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:16:33"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:16:33"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:21:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:21:56"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:21:57"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:21:57"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:23:45"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:23:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:23:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:24:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:24:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:24:50"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:24:50"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:00"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:00"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:01"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:06"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:06"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:22"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:22"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:23"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:23"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:29"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:29"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:29"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:39"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:47"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:25:47"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:02"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:02"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:02"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:05"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:05"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:05"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:06"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:26:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:37"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:37"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:46"}
+{"level":"error","message":"\nInvalid `prisma.expense.findUnique()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\controllers\\expenses.controller.ts:179:44\n\n  176 try {\n  177   const { id } = req.params;\n  178 \n→ 179   const expense = await prisma.expense.findUnique({\n          where: {\n        +   id: Int\n          },\n          include: {\n            reference: true\n          }\n        })\n\nArgument `id` is missing.","service":"canteen-api","timestamp":"2025-09-28 15:30:47"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:30:48"}
+{"level":"error","message":"\nInvalid `prisma.expense.findUnique()` invocation in\nC:\\Users\\masoo\\OneDrive\\Desktop\\Projects\\canteen-management-system\\fresh-cms-uncomplete\\backend\\src\\controllers\\expenses.controller.ts:179:44\n\n  176 try {\n  177   const { id } = req.params;\n  178 \n→ 179   const expense = await prisma.expense.findUnique({\n          where: {\n        +   id: Int\n          },\n          include: {\n            reference: true\n          }\n        })\n\nArgument `id` is missing.","service":"canteen-api","timestamp":"2025-09-28 15:30:48"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:31:49"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:31:49"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:31:49"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:31:49"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:31:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:31:51"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:31:52"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:33:46"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:33:51"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:33:52"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:37:40"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:37:41"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:38:30"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:38:57"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:38:58"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:40:10"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:40:25"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:18"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:24"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:25"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:42:26"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:45:14"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:45:14"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:45:14"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:45:14"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:45:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:18"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:18"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:45:21"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:46:03"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:46:03"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:46:03"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:46:03"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:46:03"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:47:10"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:47:10"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:47:10"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:47:10"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:47:10"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:47:24"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:47:25"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:47:25"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:47:25"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:47:25"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:15"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:48:16"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:48:55"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:48:55"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:48:55"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:48:55"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:48:55"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:12"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:12"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:12"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:12"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:13"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:13"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:13"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:49:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:50:35"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:51:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:51:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:51:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:52:03"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:52:38"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:52:38"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:52:38"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:52:38"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:52:38"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:53:08"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:53:42"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:53:56"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:54:28"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:54:28"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:54:28"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:54:28"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:54:28"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:54:30"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:55:48"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:55:48"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:55:48"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:55:48"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:55:48"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:55:49"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:55:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:55:53"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:03"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:04"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:09"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:10"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:11"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:56:34"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:57:44"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:58:43"}
+{"level":"info","message":"✅ Database connected successfully","service":"canteen-api","timestamp":"2025-09-28 15:59:16"}
+{"level":"info","message":"✅ Cron jobs initialized","service":"canteen-api","timestamp":"2025-09-28 15:59:16"}
+{"level":"info","message":"🚀 Server running on port 3400","service":"canteen-api","timestamp":"2025-09-28 15:59:16"}
+{"level":"info","message":"📊 Health check: http://localhost:3400/health","service":"canteen-api","timestamp":"2025-09-28 15:59:16"}
+{"level":"info","message":"🌍 Environment: development","service":"canteen-api","timestamp":"2025-09-28 15:59:16"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:59:19"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:59:21"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 15:59:26"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:00:07"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:01:13"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:01:14"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:01:36"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:01:36"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:01:37"}
+{"level":"info","message":"Calling https://accelerate.prisma-data.net/5.22.0/f5810140a810b5c7beeb08dd01faa074051fcbdee27aa3b12bc56d51e500d2dc/graphql (n=0)","service":"canteen-api","timestamp":"2025-09-28 16:02:06"}

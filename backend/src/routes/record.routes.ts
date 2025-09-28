@@ -12,6 +12,7 @@ const recordController = new RecordController();
 router.use(authenticate);
 
 router.get("/", asyncHandler(recordController.getAll));
+router.get("/overall", asyncHandler(recordController.getOverallRecords));
 router.get("/unpaid", asyncHandler(recordController.getUnpaidStudents));
 router.get(
   "/submitted",

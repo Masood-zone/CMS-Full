@@ -16,6 +16,12 @@ router.use(authenticateToken);
 // Get all prepayments
 router.get("/", asyncHandler(prepaymentController.getAllPrepayments));
 
+// Get all prepayments by class ID
+router.get(
+  "/class/:classId",
+  asyncHandler(prepaymentController.getAllPrepaymentsByClass)
+);
+
 // Get prepayment by ID
 router.get("/:id", asyncHandler(prepaymentController.getPrepaymentById));
 

@@ -83,12 +83,11 @@ export const prepaymentController = {
   },
 
   getAllPrepaymentsByClass: async (req: Request, res: Response) => {
-    const { id } = req.params;
-    const classId = id;
+    const { classId } = req.params;
 
     // Validate classId
     if (!classId) {
-      return res.status(400).json({ error: `Class ID is required ${id}` });
+      return res.status(400).json({ error: `Class ID is required ` });
     }
 
     try {
@@ -206,6 +205,7 @@ export const prepaymentController = {
         where: { id: parseInt(id) },
         include: { student: true, class: true },
       });
+
       if (!prepayment) {
         return res.status(404).json({ error: "Prepayment not found" });
       }

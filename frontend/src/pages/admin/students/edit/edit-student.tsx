@@ -7,9 +7,9 @@ import {
 } from "@/components/ui/card";
 import { useParams } from "react-router-dom";
 import EditStudentForm from "./edit-student-form";
-import { useFetchClasses, useFetchStudent } from "@/services/api/queries";
 import { useEffect } from "react";
 import { toast } from "sonner";
+import { useFetchClasses, useFetchStudent } from "@/services/api";
 
 export default function EditStudent() {
   const { id } = useParams();

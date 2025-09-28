@@ -16,7 +16,8 @@ router.use(authenticateToken);
 
 // Get all expenses
 router.get("/", asyncHandler(expensesController.getAllExpenses));
-
+// Expense References
+router.get("/references", asyncHandler(expensesController.getAllReferences));
 // Get expense by ID
 router.get("/:id", asyncHandler(expensesController.getExpenseById));
 
@@ -42,9 +43,6 @@ router.delete(
   requireRole(["SUPER_ADMIN", "ADMIN"]),
   asyncHandler(expensesController.deleteExpense)
 );
-
-// Expense References
-router.get("/references", asyncHandler(expensesController.getAllReferences));
 
 router.post(
   "/references",
