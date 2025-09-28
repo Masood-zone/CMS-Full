@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { format, parseISO } from "date-fns";
-import { useFetchRecordsDetail } from "@/services/api/queries";
+// import { useFetchRecordsDetail } from "@/services/api/queries";
 import { Button } from "@/components/ui/button";
 import {
   Table,
@@ -22,6 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { StatisticsTable } from "./statistics-table";
+import { useFetchRecordsDetail } from "@/services/api";
 
 interface Record {
   id: number;
